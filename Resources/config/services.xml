@@ -6,7 +6,7 @@
 
     <services>
         <service id="scottbass3.harbor_api_client" class="Scottbass3\HarborApiBundle\HarborClient" public="true">
-            <argument key="$config">%harbor_api%</argument>
+            <argument key="$config">%scottbass3_harbor_api%</argument>
         </service>
     </services>
 </container>

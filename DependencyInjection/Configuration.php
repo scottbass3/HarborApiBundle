@@ -9,7 +9,7 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('harbor_api');
+        $treeBuilder = new TreeBuilder('scottbass3_harbor_api');
         $rootNode = $treeBuilder->getRootNode();
 
         $rootNode

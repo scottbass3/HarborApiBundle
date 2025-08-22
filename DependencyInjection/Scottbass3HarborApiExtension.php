@@ -11,6 +11,11 @@ class Scottbass3HarborApiExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container): void
     {
+        $configuration = new Configuration();
+        $config = $this->processConfiguration($configuration, $configs);
+
+        $container->setParameter('scottbass3_harbor_api', $config);
+
         $loader = new XmlFileLoader(
             $container,
             new FileLocator(__DIR__.'/../Resources/config')
