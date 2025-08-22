@@ -19,10 +19,10 @@ class HarborClient
             null,
             [
                 new AddHostPlugin(
-                    $config['endpointUri']
+                    $config['base-uri']
                 ),
                 new AddPathPlugin(
-                    $config['endpointUri']
+                    $config['base-uri']
                 ),
                 new AuthenticationPlugin(
                     new BasicAuth(
