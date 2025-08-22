@@ -2,6 +2,7 @@
     "name": "scottbass3/harbor-api-bundle",
     "description": "A Wrapper for Harbor API v2 Client library for PHP",
     "type": "symfony-bundle",
+    "keywords": ["harbor", "api"],
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -14,5 +15,12 @@
             "email": "scottbass41@gmail.com"
         }
     ],
-    "require": {}
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "require": {
+        "scottbass3/harbor-api-client": "^1.0"
+    }
 }
