@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ecde280fbd04ea75e2ae19e0dc7e5b75",
+    "content-hash": "49d6579367fe5a4798338b51a647a19b",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -1251,16 +1251,16 @@
         },
         {
             "name": "scottbass3/harbor-api-client",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scottbass3/harbor-api-client.git",
-                "reference": "bf6f62c190bcdcca92156365dcfcf806d05f9077"
+                "reference": "399a4f823b5804483f00f30ce6a8fc7918bace7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scottbass3/harbor-api-client/zipball/bf6f62c190bcdcca92156365dcfcf806d05f9077",
-                "reference": "bf6f62c190bcdcca92156365dcfcf806d05f9077",
+                "url": "https://api.github.com/repos/scottbass3/harbor-api-client/zipball/399a4f823b5804483f00f30ce6a8fc7918bace7c",
+                "reference": "399a4f823b5804483f00f30ce6a8fc7918bace7c",
                 "shasum": ""
             },
             "require": {
@@ -1274,7 +1274,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Flownative\\Harbor\\Api\\": "src/"
+                    "Scottbass3\\Harbor\\Api\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1287,9 +1287,9 @@
                 "harbor"
             ],
             "support": {
-                "source": "https://github.com/scottbass3/harbor-api-client/tree/v1.0.0"
+                "source": "https://github.com/scottbass3/harbor-api-client/tree/v1.0.1"
             },
-            "time": "2025-08-22T08:05:52+00:00"
+            "time": "2025-08-22T08:47:22+00:00"
         },
         {
             "name": "symfony/cache",
