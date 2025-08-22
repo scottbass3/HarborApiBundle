@@ -16,7 +16,7 @@ class Scottbass3HarborApiExtension extends Extension
             new FileLocator(__DIR__.'/../Resources/config')
         );
 
-        $loader->load('harbor_api.xml');
+        $loader->load('services.xml');
     }
 
     public function getNamespace(): string
