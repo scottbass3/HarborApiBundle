@@ -21,6 +21,8 @@
         }
     },
     "require": {
-        "scottbass3/harbor-api-client": "^1.0"
+        "php": "^8.3",
+        "scottbass3/harbor-api-client": "^1.0",
+        "symfony/framework-bundle": "^7.3"
     }
 }
