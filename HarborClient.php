@@ -5,8 +5,8 @@ namespace Scottbass3\HarborApiBundle;
 use Http\Client\Common\Plugin\AddHostPlugin;
 use Http\Client\Common\Plugin\AddPathPlugin;
 use Http\Client\Common\Plugin\AuthenticationPlugin;
-use Http\Discovery\UriFactoryDiscovery;
 use Http\Message\Authentication\BasicAuth;
+use Nyholm\Psr7\Factory\Psr17Factory;
 use Scottbass3\Harbor\Api\Client;
 
 
@@ -20,10 +20,10 @@ class HarborClient
             null,
             [
                 new AddHostPlugin(
-                    UriFactoryDiscovery::find()->createUri($config['base_uri'])
+                    (new Psr17Factory())->createUri($config['base_uri'])
                 ),
                 new AddPathPlugin(
-                    UriFactoryDiscovery::find()->createUri($config['base_uri'])
+                    (new Psr17Factory())->createUri($config['base_uri'])
                 ),
                 new AuthenticationPlugin(
                     new BasicAuth(

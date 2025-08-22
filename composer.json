@@ -23,6 +23,8 @@
     "require": {
         "php": "^8.3",
         "scottbass3/harbor-api-client": "^1.0",
-        "symfony/framework-bundle": "*"
+        "symfony/framework-bundle": "*",
+        "symfony/http-client": "^7.3",
+        "php-http/httplug": "^2.4"
     }
 }
