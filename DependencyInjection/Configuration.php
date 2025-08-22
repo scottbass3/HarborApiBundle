@@ -13,9 +13,25 @@ class Configuration implements ConfigurationInterface
         $rootNode = $treeBuilder->getRootNode();
 
         $rootNode
-            ->fixXmlConfig('base-uri')
-            ->fixXmlConfig('username')
-            ->fixXmlConfig('password');
+            ->children()
+                ->scalarNode('base_uri')
+                    ->info('URI of the harbor server.')
+                    ->defaultValue('')
+                    ->cannotBeEmpty()
+                ->end()
+                ->scalarNode('login')
+                    ->info('Login to authenticate on harbor API')
+                    ->defaultValue('')
+                    ->cannotBeEmpty()
+                ->end()
+                ->scalarNode('password')
+                    ->info('Password to authenticate on harbor API')
+                    ->defaultValue('')
+                    ->cannotBeEmpty()
+                ->end()
+            ->end()
+        ;
+
 
         return $treeBuilder;
     }

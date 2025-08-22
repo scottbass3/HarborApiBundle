@@ -23,14 +23,4 @@ class Scottbass3HarborApiExtension extends Extension
 
         $loader->load('services.xml');
     }
-
-    public function getNamespace(): string
-    {
-        return 'http://scottbass3.com/schema/dic/harbor_api';
-    }
-
-    public function getXsdValidationBasePath(): string
-    {
-        return __DIR__.'/../Resources/config/schema';
-    }
 }
