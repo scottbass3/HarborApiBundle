@@ -5,8 +5,12 @@
         https://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="scottbass3.harbor_api_client" class="Scottbass3\HarborApiBundle\HarborClient" public="true">
+        <service id="Scottbass3\HarborApiBundle\HarborClient" 
+            class="Scottbass3\HarborApiBundle\HarborClient" 
+            public="true">
             <argument key="$config">%scottbass3_harbor_api%</argument>
         </service>
+        <service id="scottbass3.harbor_api_client"
+             alias="Scottbass3\HarborApiBundle\HarborClient" />
     </services>
 </container>
