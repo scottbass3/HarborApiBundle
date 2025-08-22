@@ -6,7 +6,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Scottbass3\\HarborApiBundle\\": "src/"
+            "Scottbass3\\HarborApiBundle\\": ""
         }
     },
     "authors": [
@@ -23,6 +23,6 @@
     "require": {
         "php": "^8.3",
         "scottbass3/harbor-api-client": "^1.0",
-        "symfony/framework-bundle": "^7.3"
+        "symfony/framework-bundle": "*"
     }
 }
